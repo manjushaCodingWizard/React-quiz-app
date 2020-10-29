@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App</title>
+  <link rel ="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/e873c2c6f0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+ <div class="overlay"></div>
+  <img src="bckgnd1.jpg">
+  <div class="window-one">
+    <h1> Quiz Application</h1>
+    <button class="start-btn">Let's Begin</button>
+  </div>
+  
+  <!--Rules-->
+  <div class="rules-box">
+    <div class="rules-title">
+      <span>Read Rules Before You Start</span>
+    </div>
+    <div class="rules-list">
+      <div class="rules">1. You will have only <span>50 Seconds</span> for each question</div>
+      <div class="rules">2. You can't reselect the answer</div>
+      <div class="rules">3. Select the answer in the given time,once it's gone, you cant select answer</div>
+    </div>
+    <div class="buttons">
+      <button class="quit">Quit</button>
+      <button class="restart">Start</button>
+    </div>
+  </div>   <!--rules-box class end-->
+
+  <!--sections-->
+  <div class="sections">
+    <div class="section-title">Choose a Section</div>
+    <div class="section-list">
+      <ul>
+        <li class="html">1. HTML5 & CSS</li>
+        <li class="css">2. JavaScript</li>
+        <li class="react">3. React</li>
+      </ul>
+    </div>
+  </div>
+
+  <!--quiz box-->
+  <div class="quiz-box">
+    <header>
+      <div class="title"></div>
+      <div class="timer">
+        <div class="timer-text">Remaining Time</div>
+        <div class="timer-sec">50</div>
+      </div>
+    </header>  
+    <section>
+      <div class="que-text">
+        <!--<span>Which attribute specifies a unique alphanumeric identifier to be associated with an element?</span>-->
+      </div>
+      <div class="option-list">
+        <!--<div class="option">
+          <span>class</span>
+          <div class="icon tick"><i class="fas fa-check"></i></div>
+        </div>
+        <div class="option">
+          <span>id</span>
+          <div class="icon cross"><i class="fas fa-times"></i></div>
+        </div>
+        <div class="option">
+          <span>article</span>
+        </div>
+        <div class="option">
+          <span>html</span>
+        </div>-->
+      </div>  <!--option-list class end-->
+    </section>
+
+    <!--footer-->
+    <footer>
+      <div class="total-que">
+        <!--<span><p>2</p>of<p>30</p> Questions</span>-->
+      </div>
+      <button class="next-btn">Next</button>
+    </footer>
+  </div>   <!--quiz-box class end-->
+
+  <!--result box-->
+  <div class="result-box">
+    <div class="complete-text">Quiz Submitted</div>
+    <div class="score-text">
+      <!--<span>You got <p>2</p> out of <p>30</p></span>-->
+    </div>
+    <div class="buttons">
+      <button class="restart">Restart</button>
+      <button class="quit">Quit</button>
+    </div>
+  </div>  <!--result box class end-->
+ 
+
+
+
+
+
+  <script src="main.js"></script>
+  <script src ="quiz.js"></script>
+</body>
+</html>
